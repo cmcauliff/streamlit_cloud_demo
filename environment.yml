@@ -347,4 +347,4 @@ dependencies:
       - py-glm==0.0.1
       - termcolor==3.3.0
       - wrapt==2.1.2
-prefix: C:\Users\istil\mambaforge\envs\ds
+
