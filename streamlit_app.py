@@ -21,7 +21,7 @@ with col2:
     car_displacement = st.slider("Select car engine displacement", 100, 400, value=250)
     st.write(f"my car displacement is {car_displacement }")
     
-cars_df = pd.read_csv("data/cars.csv")
+cars_df = pd.read_csv("data/cars_data.csv")
 
 model_joblib = joblib.load("car_model.joblib")
 
@@ -37,4 +37,6 @@ input_frame = pd.DataFrame(input_dict)
 predictions = model_pipeline.predict(input_frame)
 
 st.title(predictions[0])
+
+st.image("images/car.png")
 
